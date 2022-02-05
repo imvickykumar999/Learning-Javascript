@@ -1,0 +1,34 @@
+<!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Light Bulb</title>
+  </head>
+
+  <body>
+    <h2>What can JavaScript Do?</h2>
+
+    <p>Javascript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the (source) attribute of an image.</p>
+
+    <button type="button"
+      onclick="document.getElementById('myImage').src='pic_bulbon.gif'"
+      name="button">
+      Turn on the light
+    </button>
+
+    <img src="pic_bulboff.gif"
+      id="myImage"
+      style="width:100px"
+      alt="pic_bulboff">
+
+    <button type="button"
+      onclick="document.getElementById('myImage').src='pic_bulboff.gif'"
+      name="button">
+      Turn off the light
+    </button>
+
+  </body>
+</html>
