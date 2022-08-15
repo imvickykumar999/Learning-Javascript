@@ -4,17 +4,23 @@
 
 -----------------------------------
 
-    function callNumbers() {
+        function callNumbers() {
 
-      // Call the Numbers API for random math fact
-      var response = UrlFetchApp.fetch("https://api.metalpriceapi.com/v1/latest?base=USD&currencies=XAU,XAG&api_key=Dxt3fx5NcET88EGsAtvrdJ");
-      Logger.log(response.getContentText());
+          // Call the Numbers API for random math fact
+          let url = "https://api.metalpriceapi.com/v1/latest?base=USD&currencies=XAU,XAG&api_key=Dxt3fx5NcET88EGsAtvrdJ";
+          let fact = UrlFetchApp.fetch(url);
 
-      var fact = response.getContentText();
-      var sheet = SpreadsheetApp.getActiveSheet();
-      sheet.getRange(sheet.getLastRow() + 1,1).setValue([fact]);
+          let apiResponse = JSON.parse(fact.getContentText());
+          Logger.log(apiResponse.timestamp, apiResponse.rates.XAU);
 
-    }
+          let sheet = SpreadsheetApp.getActiveSheet();
+        //   sheet.getRange(1,1).setValue("timestamp");
+        //   sheet.getRange(1,2).setValue("rates");
+
+          sheet.getRange(sheet.getLastRow() + 1,1).setValue(apiResponse.timestamp);
+          sheet.getRange(sheet.getLastRow() + 0,2).setValue(apiResponse.rates.XAU);
+
+        }
     
 # Function Call trigger
 
