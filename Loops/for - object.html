@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript for Loop</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            const person = {"fname":"John", "lname":"Doe", "age":25};
+
+            let text = "";
+            for (let x in person){
+                text += person[x] + " ";
+                console.log(person[x]);
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
