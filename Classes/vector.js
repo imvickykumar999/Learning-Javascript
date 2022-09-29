@@ -15,6 +15,7 @@ class Point {
 
 const p1 = new Point(5, 5);
 const p2 = new Point(10, 10);
+
 p1.displayName; // undefined
 p1.distance;    // undefined
 p2.displayName; // undefined
@@ -22,3 +23,26 @@ p2.distance;    // undefined
 
 console.log(Point.displayName);      // "Point"
 console.log(Point.distance(p1, p2)); // 7.0710678118654755
+
+// ------------------- practice --------------------
+
+// class Person {
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//   }
+
+//   static displayName = "Vicks";
+//   static concat(a, b) {
+//     const dx = a.x + b.x;
+//     const dy = a.y + 1000*b.y;
+
+//     return (dx + " " + dy);
+//   }
+// }
+
+// const p3 = new Person("Vicky", 24);
+// const p4 = new Person(" Kumar", 28);
+
+// console.log(Person.displayName);
+// console.log(Person.concat(p3, p4));
