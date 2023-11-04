@@ -1,5 +1,9 @@
 
-# Inspect -> Console
+# Quick Points
+
+    https://www.youtube.com/watch?v=hKB-YGF14SY
+
+## Inspect -> Console
 
     alert("Hello World");
 
