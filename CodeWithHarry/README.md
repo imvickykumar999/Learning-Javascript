@@ -10,7 +10,7 @@
 # `Inspect` -> `Console`
 
     http://127.0.0.1:5500/index.html
-    
+
 ![image](https://github.com/imvickykumar999/Learning-Javascript/assets/50515418/ddb59aae-6527-4eb1-aa9c-9489ca79d72f)
 
 ```javascript
@@ -23,6 +23,8 @@ document.querySelector(".className");
 
 document.getElementById("idName").click();
 
-idName.innerHTML = "Hello World";
+idName.innerHTML = "<b>Hello World</b>";
+
+document.getElementsByTagName('h2')[0].style.fontSize = '56px';
 
 ```
