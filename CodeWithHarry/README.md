@@ -11,7 +11,7 @@
 
     http://127.0.0.1:5500/index.html
     
-![image](https://github.com/imvickykumar999/Learning-Javascript/assets/50515418/24e36955-b3df-4e41-b607-6b535a924f76)
+![image](https://github.com/imvickykumar999/Learning-Javascript/assets/50515418/ddb59aae-6527-4eb1-aa9c-9489ca79d72f)
 
 ```javascript
 
@@ -19,8 +19,10 @@ alert("Hello World");
 
 console.log("Hello World");
 
-document.querySelector(".class-name")
+document.querySelector(".className");
 
-document.getElementById("id-name").click();
+document.getElementById("idName").click();
+
+idName.innerHTML = "Hello World";
 
 ```
