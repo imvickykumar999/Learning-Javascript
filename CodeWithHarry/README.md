@@ -7,7 +7,9 @@
 
 <br>
 
-## `Inspect` -> `Console`
+# `Inspect` -> `Console`
+
+![image](https://github.com/imvickykumar999/Learning-Javascript/assets/50515418/24e36955-b3df-4e41-b607-6b535a924f76)
 
 ```javascript
 
