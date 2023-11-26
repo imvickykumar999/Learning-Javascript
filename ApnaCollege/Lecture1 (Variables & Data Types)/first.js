@@ -62,17 +62,17 @@ var b = 6; // can be re-declared & updated
 }
 
 const student = {
-    fullName : "Rahul Kumar",
+    fullName : "Vicky Kumar",
     age : 20,
     marks : 89.67,
     isPass : true
 }
 console.log(student);
 
-student['age'] += 2;
+student['age'] += 3;
 console.log(student['age']);
 
-student.fullName = "Vicky Kumar";
+student.fullName = "Rahul Kumar";
 console.log(student.fullName);
 
 student['marks'] = student.marks - 70;
@@ -80,3 +80,10 @@ console.log(student.marks);
 
 student.isPass = !student['isPass'];
 console.log(student['isPass']);
+console.log(typeof student.isPass);
+
+student.isPass += 1;
+console.log(typeof student['isPass']);
+
+student.new_var = "New Variable";
+console.log(student);
